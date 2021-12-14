@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,10 +6,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
 <title>API Reference: qSM_Handler_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg">
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -17,6 +31,9 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -24,7 +41,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="quarktslogo.jfif"/></td>
+  <td id="projectlogo"><img alt="Logo" src="quarktslogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">API Reference
    &#160;<span id="projectnumber">v7</span>
@@ -86,11 +103,11 @@ $(document).ready(function(){initNavTree('structq_s_m___handler__t.html',''); in
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">qSM_Handler_t Struct Reference<div class="ingroups"><a class="el" href="group__qfsm.html">Finite State Machines</a></div></div>  </div>
+<div class="title">qSM_Handler_t Struct Reference<div class="ingroups"><a class="el" href="group__qmodules.html">Kernel Modules</a> &raquo; <a class="el" href="group__qfsm.html">Finite State Machines</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The state callback argument to handle the state-machine dinamics and provide execution information. Some members can be written to perform state-transtions.  
+<p>The callback argument to handle the state-machine dynamics and provide execution information. Some members can be written to perform state-transtions.  
  <a href="structq_s_m___handler__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="qfsm_8h_source.html">qfsm.h</a>&gt;</code></p>
@@ -117,7 +134,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:acde5467a47c845d8f84629204ffb0a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The state callback argument to handle the state-machine dinamics and provide execution information. Some members can be written to perform state-transtions. </p>
+<div class="textblock"><p>The callback argument to handle the state-machine dynamics and provide execution information. Some members can be written to perform state-transtions. </p>
 <dl class="section note"><dt>Note</dt><dd>Should be used only in state-callbacks as the only input argument. </dd>
 <dd>
 The members of this structure must be accessed as a pointer. </dd></dl>
@@ -133,7 +150,7 @@ The members of this structure must be accessed as a pointer. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The user storage pointer </p>
+<p>The user storage pointer. If the FSM its running as a task, this will point to the <a class="el" href="structq_event__t.html" title="The task argument with all the regarding information of the task execution.">qEvent_t</a> structure </p>
 
 </div>
 </div>
@@ -253,12 +270,13 @@ The members of this structure must be accessed as a pointer. </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Used to set the behavior of a transition to history. qSM_TRANSITION_NO_HISTORY by default </p>
+<p>Used to set the behavior of a transition to history. <a class="el" href="group__qfsm.html#ggaa410ec930ead4964eaf0d75fc24d230bab923ff14a3651b5af267827a6ad08dd7">qSM_TRANSITION_NO_HISTORY</a> by default </p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
@@ -266,5 +284,17 @@ The members of this structure must be accessed as a pointer. </dd></dl>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
+<script type="text/javascript">
+  $(function() {
+     toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+     toggleButton.title = "Toggle Light/Dark Mode"
+     $(document).ready(function(){
+       document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+     })
+     $(window).resize(function(){
+       document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
+     })
+   })
+</script>
 </body>
 </html>

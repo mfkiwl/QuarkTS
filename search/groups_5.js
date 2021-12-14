@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kernel_720',['Kernel',['../group___kernel.html',1,'']]]
+  ['general_20purpose_20macros_830',['General purpose macros',['../group__qflm.html',1,'']]],
+  ['generic_20double_2dlinked_20lists_831',['Generic double-linked lists',['../group__qlists.html',1,'']]]
 ];
