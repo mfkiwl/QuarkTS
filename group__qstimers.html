@@ -1,10 +1,9 @@
-<!-- HTML header for doxygen 1.9.1-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <!-- BEGIN opengraph metadata -->
 <meta property="og:title" content="Doxygen Awesome" />
@@ -17,12 +16,22 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>API Reference: Software-Timers</title>
+<title>OS: Software-Timers</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="logo.drawio.svg">
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+</script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -30,12 +39,25 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -43,30 +65,32 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="quarktslogo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">API Reference
-   &#160;<span id="projectnumber">v7</span>
+   <div id="projectname">OS
+   &#160;<span id="projectnumber">v7.2.4</span>
    </div>
+   <div id="projectbrief">Documentation</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.9.1 -->
+<!-- Generated by Doxygen 1.9.2 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Search');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -80,7 +104,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('group__qstimers.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -104,44 +128,43 @@ $(document).ready(function(){initNavTree('group__qstimers.html',''); initResizab
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle">
-<div class="title">Software-Timers<div class="ingroups"><a class="el" href="group__qmodules.html">Kernel Modules</a></div></div>  </div>
+  <div class="headertitle"><div class="title">Software-Timers<div class="ingroups"><a class="el" href="group__qmodules.html">Kernel extensions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>API interface for the Software-Timers module.  
+<p>API interface for the <a class="el" href="q_extensions.html#q_stimers">STimers</a> extension.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structq_s_timer__t.html">qSTimer_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A STimer(Software Timer) object.  <a href="structq_s_timer__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf0fa9b1961ce1fda542dcf433e3093c9"><td class="memItemLeft" align="right" valign="top"><a id="gaf0fa9b1961ce1fda542dcf433e3093c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#gaf0fa9b1961ce1fda542dcf433e3093c9">QSTIMER_DISARM_VALUE</a></td></tr>
+<tr class="memitem:gaf0fa9b1961ce1fda542dcf433e3093c9"><td class="memItemLeft" align="right" valign="top"><a id="gaf0fa9b1961ce1fda542dcf433e3093c9" name="gaf0fa9b1961ce1fda542dcf433e3093c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QSTIMER_DISARM_VALUE</b></td></tr>
 <tr class="memdesc:gaf0fa9b1961ce1fda542dcf433e3093c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that defines the value of a disarmed STimer. <br /></td></tr>
 <tr class="separator:gaf0fa9b1961ce1fda542dcf433e3093c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7cf1635dc6c882c4db956c25d53f7874"><td class="memItemLeft" align="right" valign="top"><a id="ga7cf1635dc6c882c4db956c25d53f7874"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#ga7cf1635dc6c882c4db956c25d53f7874">QSTIMER_INITIALIZER</a></td></tr>
+<tr class="memitem:ga7cf1635dc6c882c4db956c25d53f7874"><td class="memItemLeft" align="right" valign="top"><a id="ga7cf1635dc6c882c4db956c25d53f7874" name="ga7cf1635dc6c882c4db956c25d53f7874"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QSTIMER_INITIALIZER</b></td></tr>
 <tr class="memdesc:ga7cf1635dc6c882c4db956c25d53f7874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that can be used to initialize a disarmed STimer instance. <br /></td></tr>
 <tr class="separator:ga7cf1635dc6c882c4db956c25d53f7874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a1ed3ebbeeb43fcb817b8a63ce6c865"><td class="memItemLeft" align="right" valign="top"><a id="ga4a1ed3ebbeeb43fcb817b8a63ce6c865"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#ga4a1ed3ebbeeb43fcb817b8a63ce6c865">QSTIMER_ARMED</a></td></tr>
+<tr class="memitem:ga4a1ed3ebbeeb43fcb817b8a63ce6c865"><td class="memItemLeft" align="right" valign="top"><a id="ga4a1ed3ebbeeb43fcb817b8a63ce6c865" name="ga4a1ed3ebbeeb43fcb817b8a63ce6c865"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QSTIMER_ARMED</b></td></tr>
 <tr class="memdesc:ga4a1ed3ebbeeb43fcb817b8a63ce6c865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that defines the status of an armed STimer. <br /></td></tr>
 <tr class="separator:ga4a1ed3ebbeeb43fcb817b8a63ce6c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad33c4dde733572d0ec1a308fb6b00e95"><td class="memItemLeft" align="right" valign="top"><a id="gad33c4dde733572d0ec1a308fb6b00e95"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#gad33c4dde733572d0ec1a308fb6b00e95">QSTIMER_DISARMED</a></td></tr>
+<tr class="memitem:gad33c4dde733572d0ec1a308fb6b00e95"><td class="memItemLeft" align="right" valign="top"><a id="gad33c4dde733572d0ec1a308fb6b00e95" name="gad33c4dde733572d0ec1a308fb6b00e95"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QSTIMER_DISARMED</b></td></tr>
 <tr class="memdesc:gad33c4dde733572d0ec1a308fb6b00e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that defines the status of a disarmed STimer. <br /></td></tr>
 <tr class="separator:gad33c4dde733572d0ec1a308fb6b00e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4014bdc94e6e0e68ea96331c3fa441b8"><td class="memItemLeft" align="right" valign="top"><a id="ga4014bdc94e6e0e68ea96331c3fa441b8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#ga4014bdc94e6e0e68ea96331c3fa441b8">QSTIMER_REMAINING_IN_DISARMED_STATE</a></td></tr>
+<tr class="memitem:ga4014bdc94e6e0e68ea96331c3fa441b8"><td class="memItemLeft" align="right" valign="top"><a id="ga4014bdc94e6e0e68ea96331c3fa441b8" name="ga4014bdc94e6e0e68ea96331c3fa441b8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>QSTIMER_REMAINING_IN_DISARMED_STATE</b></td></tr>
 <tr class="memdesc:ga4014bdc94e6e0e68ea96331c3fa441b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro that defines the value that a disarmed STimer returns when the remaining time is requested. <br /></td></tr>
 <tr class="separator:ga4014bdc94e6e0e68ea96331c3fa441b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7b1fd8123693bd8acf2a527fa0a3ef36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__qtypes.html#ga131b2258b5135d0b1e3ded5ecbe309d7">qBool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__qstimers.html#ga7b1fd8123693bd8acf2a527fa0a3ef36">qSTimer_Reload</a> (<a class="el" href="structq_s_timer__t.html">qSTimer_t</a> *const t)</td></tr>
 <tr class="memdesc:ga7b1fd8123693bd8acf2a527fa0a3ef36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload the STimer with the previous specified time.  <a href="group__qstimers.html#ga7b1fd8123693bd8acf2a527fa0a3ef36">More...</a><br /></td></tr>
@@ -169,9 +192,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga633dce3b82f46a68a86a3aff37cb22cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>API interface for the Software-Timers module. </p>
+<p >API interface for the <a class="el" href="q_extensions.html#q_stimers">STimers</a> extension. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>This extension requires the operating system is previously initialized with <a class="el" href="group__qtaskcreation.html#gac97ca3bd669135e0adcf07fcc2852313" title="Task Scheduler Setup. This function is required and must be called once in the application main threa...">qOS_Setup()</a> with a functional time-base. Please read <a class="el" href="q_background.html#q_timmingapproach">Timming Approach</a> and <a class="el" href="q_background.html#q_setupkernel">Setting up the OS kernel</a> </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga56ac8d637d8078647931f1846201a570"></a>
+<a id="ga56ac8d637d8078647931f1846201a570" name="ga56ac8d637d8078647931f1846201a570"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga56ac8d637d8078647931f1846201a570">&#9670;&nbsp;</a></span>qSTimer_Disarm()</h2>
 
 <div class="memitem">
@@ -198,7 +222,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1c707ea49120d558336f5be41f4c08e5"></a>
+<a id="ga1c707ea49120d558336f5be41f4c08e5" name="ga1c707ea49120d558336f5be41f4c08e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1c707ea49120d558336f5be41f4c08e5">&#9670;&nbsp;</a></span>qSTimer_Elapsed()</h2>
 
 <div class="memitem">
@@ -225,7 +249,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0d76c7505a0aa2f10af0f867843afa5a"></a>
+<a id="ga0d76c7505a0aa2f10af0f867843afa5a" name="ga0d76c7505a0aa2f10af0f867843afa5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0d76c7505a0aa2f10af0f867843afa5a">&#9670;&nbsp;</a></span>qSTimer_Expired()</h2>
 
 <div class="memitem">
@@ -253,7 +277,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7b25e8ad7bb0b4e87bc07262a6f402d0"></a>
+<a id="ga7b25e8ad7bb0b4e87bc07262a6f402d0" name="ga7b25e8ad7bb0b4e87bc07262a6f402d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7b25e8ad7bb0b4e87bc07262a6f402d0">&#9670;&nbsp;</a></span>qSTimer_FreeRun()</h2>
 
 <div class="memitem">
@@ -280,8 +304,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Non-Blocking STimer check with automatic arming. </p>
-<p>Behavior: If disarmed, it gets armed immediately with the specified time.</p>
-<p>If armed, the time argument is ignored and the API only checks for expiration. When the time expires, the STimer gets armed immediately taking the specified time. </p><dl class="section note"><dt>Note</dt><dd>After the STimer expiration, <a class="el" href="group__qstimers.html#ga7b25e8ad7bb0b4e87bc07262a6f402d0" title="Non-Blocking STimer check with automatic arming.">qSTimer_FreeRun()</a> re-arms the STimer </dd>
+<p >Behavior: If disarmed, it gets armed immediately with the specified time.</p>
+<p >If armed, the time argument is ignored and the API only checks for expiration. When the time expires, the STimer gets armed immediately taking the specified time. </p><dl class="section note"><dt>Note</dt><dd>After the STimer expiration, <a class="el" href="group__qstimers.html#ga7b25e8ad7bb0b4e87bc07262a6f402d0" title="Non-Blocking STimer check with automatic arming.">qSTimer_FreeRun()</a> re-arms the STimer </dd>
 <dd>
 The OS must be running before using STimers. </dd>
 <dd>
@@ -298,7 +322,7 @@ The expiration time should be at least, two times greater than the clock-Tick. <
 
 </div>
 </div>
-<a id="ga7b1fd8123693bd8acf2a527fa0a3ef36"></a>
+<a id="ga7b1fd8123693bd8acf2a527fa0a3ef36" name="ga7b1fd8123693bd8acf2a527fa0a3ef36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7b1fd8123693bd8acf2a527fa0a3ef36">&#9670;&nbsp;</a></span>qSTimer_Reload()</h2>
 
 <div class="memitem">
@@ -326,7 +350,7 @@ The expiration time should be at least, two times greater than the clock-Tick. <
 
 </div>
 </div>
-<a id="ga90373b67fa8c27df60e5bdb1183f3076"></a>
+<a id="ga90373b67fa8c27df60e5bdb1183f3076" name="ga90373b67fa8c27df60e5bdb1183f3076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga90373b67fa8c27df60e5bdb1183f3076">&#9670;&nbsp;</a></span>qSTimer_Remaining()</h2>
 
 <div class="memitem">
@@ -353,7 +377,7 @@ The expiration time should be at least, two times greater than the clock-Tick. <
 
 </div>
 </div>
-<a id="ga3eb4d7620b2b14a28ea7bbe39935976a"></a>
+<a id="ga3eb4d7620b2b14a28ea7bbe39935976a" name="ga3eb4d7620b2b14a28ea7bbe39935976a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3eb4d7620b2b14a28ea7bbe39935976a">&#9670;&nbsp;</a></span>qSTimer_Set()</h2>
 
 <div class="memitem">
@@ -394,7 +418,7 @@ The expiration time should be at least, two times greater than the clock-Tick. <
 
 </div>
 </div>
-<a id="ga633dce3b82f46a68a86a3aff37cb22cf"></a>
+<a id="ga633dce3b82f46a68a86a3aff37cb22cf" name="ga633dce3b82f46a68a86a3aff37cb22cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga633dce3b82f46a68a86a3aff37cb22cf">&#9670;&nbsp;</a></span>qSTimer_Status()</h2>
 
 <div class="memitem">
@@ -423,24 +447,11 @@ The expiration time should be at least, two times greater than the clock-Tick. <
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<!-- HTML footer for doxygen 1.9.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
-<script type="text/javascript">
-  $(function() {
-     toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
-     toggleButton.title = "Toggle Light/Dark Mode"
-     $(document).ready(function(){
-       document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
-     })
-     $(window).resize(function(){
-       document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
-     })
-   })
-</script>
 </body>
 </html>

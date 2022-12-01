@@ -9,7 +9,7 @@ var group__qqueues =
     [ "qQueue_IsFull", "group__qqueues.html#ga9bf1f75598830bb171718245ca27abbd", null ],
     [ "qQueue_IsReady", "group__qqueues.html#gad063905acb9956611eb17eeed2d902d0", null ],
     [ "qQueue_ItemsAvailable", "group__qqueues.html#gafde989e9ba6515a6659b0e5fc35ad9fe", null ],
-    [ "qQueue_Peek", "group__qqueues.html#ga84a692b569c515f5e46803f381c37d88", null ],
+    [ "qQueue_Peek", "group__qqueues.html#ga7a5ee0a87983d887193a8cbae36edf27", null ],
     [ "qQueue_Receive", "group__qqueues.html#ga9c09590fb964a6c0c15d2b409861c9c4", null ],
     [ "qQueue_RemoveFront", "group__qqueues.html#ga9e6cea15266a9ab92c1de0aa3d9b4468", null ],
     [ "qQueue_Reset", "group__qqueues.html#gad657e26fa2ff7c5bd90d34c0f96d6bb9", null ],
